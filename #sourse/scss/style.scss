@@ -5,6 +5,13 @@
 	border: 0;
 }
 
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
 
 :focus,
@@ -97,6 +104,10 @@ $title-en-color:#787878;
 $tag-color:#333333;
 $tag-background-color:#ffff;
 $play-color:#fff;
+$content-color:#fff;
+$content-textcolor:#000000;
+$content-button-color:#FF8F27;
+$content-button-text-color:#fff;
 /*-- Переменные цвета шрифт конец --*/
 
 /*--Основные стили--*/
@@ -207,6 +218,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin-bottom: 100px;
 }
 
 .movie-info {
@@ -277,5 +289,48 @@ body {
 	background-position: center;
 	margin-left: 15px;
 	transform: rotate(90deg);
+
+}
+
+.content {
+	background: $content-color;
+	border-radius: 3px;
+	color: $content-textcolor;
+	padding: 43px 50px;
+}
+
+.short-info {}
+
+.poster {
+	display: block;
+	margin-top: -80px;
+	margin-bottom: 20px;
+}
+
+.button {
+	background: $content-button-color;
+	padding: 10px 44px;
+	color: $content-button-text-color;
+	font-size: 14px;
+	line-height: 16px;
+	margin-bottom: 30px;
+
+}
+
+.actors-tittle {
+	padding-left: 15px;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 10px;
+}
+
+.actors-list {
+	padding-left: 15px;
+	text-decoration: underline;
+}
+
+.actors-list-item {
+	padding-bottom: 5px;
 
 }
