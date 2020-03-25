@@ -108,6 +108,8 @@ $content-color:#fff;
 $content-textcolor:#000000;
 $content-button-color:#FF8F27;
 $content-button-text-color:#fff;
+$menu-item-color:#000000;
+$tabs-item-hover:#FF8F27;
 /*-- Переменные цвета шрифт конец --*/
 
 /*--Основные стили--*/
@@ -293,6 +295,8 @@ body {
 }
 
 .content {
+	display: flex;
+	justify-content: space-between;
 	background: $content-color;
 	border-radius: 3px;
 	color: $content-textcolor;
@@ -334,3 +338,59 @@ body {
 	padding-bottom: 5px;
 
 }
+
+.full-info {
+	flex: 0.97;
+}
+
+.tabs {
+	margin-bottom: 40px;
+}
+
+.tabs-item {
+	color: $menu-item-color;
+	margin-right: 40px;
+	font-size: 17px;
+	line-height: 21px;
+}
+
+.tabs-item:hover {
+	color: $tabs-item-hover;
+}
+
+.tabs-item-active {
+	color: $tabs-item-hover;
+	margin-right: 40px;
+	font-size: 17px;
+	line-height: 21px;
+}
+
+.bookmark-added {}
+
+.full-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.tabs-content {
+	margin-right: 70px;
+}
+
+.text {
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+.textz {
+	font-size: 16px;
+	margin-bottom: 70px;
+}
+
+.text-title {
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 140%;
+	padding-bottom: 22px;
+}
+
+.subscribe {}
