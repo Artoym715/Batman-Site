@@ -5,13 +5,7 @@
 	border: 0;
 }
 
-*,
-*:before,
-*:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-}
+
 
 :focus,
 :active {
@@ -97,6 +91,12 @@ $fonts:'Roboto',
 sans-serif;
 $searchcolor:#AEAEAE;
 $backgroundsearchcolor:rgba(196, 196, 196, 0.5);
+$fontsh1:'Playfair Display',
+serif;
+$title-en-color:#787878;
+$tag-color:#333333;
+$tag-background-color:#ffff;
+$play-color:#fff;
 /*-- Переменные цвета шрифт конец --*/
 
 /*--Основные стили--*/
@@ -120,6 +120,7 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	padding-top: 45px;
+	margin-bottom: 30%;
 }
 
 .logo {
@@ -179,4 +180,102 @@ body {
 	height: 40px;
 	border-radius: 50%;
 	object-fit: cover;
+}
+
+.main {}
+
+.title {
+	margin-bottom: 7px;
+	font-family: $fontsh1;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 64px;
+	color: $textcolor;
+}
+
+.title-en {
+	display: inline-block;
+	font-family: $fonts;
+	font-size: 20px;
+	line-height: 23px;
+	color: $title-en-color;
+	margin-bottom: 38px;
+
+}
+
+.info {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.movie-info {
+	display: flex;
+	align-items: center;
+}
+
+.tag {
+	display: inline-block;
+	font-family: $fonts;
+	font-size: 16px;
+	line-height: 19px;
+	color: $tag-color;
+	background-color: $tag-background-color;
+	border-radius: 3px;
+	padding: 5px 10px;
+	margin-right: 30px;
+}
+
+.country {
+	font-family: $fonts;
+	font-size: 16px;
+	line-height: 19px;
+	color: $textcolor;
+	margin-right: 33px;
+}
+
+.play {
+	display: flex;
+	align-items: center;
+	font-family: $fonts;
+	font-size: 16px;
+	line-height: 19px;
+	color: $textcolor;
+}
+
+.play:before {
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/Vector.svg);
+	background-repeat: no-repeat;
+	background-color: $play-color;
+	background-position: center;
+	border-radius: 50%;
+	margin-right: 15px;
+
+
+}
+
+.more {
+	display: flex;
+	align-items: center;
+	font-family: $fonts;
+	font-size: 16px;
+	line-height: 19px;
+	color: $textcolor;
+}
+
+.more:after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url(../img/Vector.svg);
+	background-repeat: no-repeat;
+	background-color: $play-color;
+	border-radius: 50%;
+	background-position: center;
+	margin-left: 15px;
+	transform: rotate(90deg);
+
 }
