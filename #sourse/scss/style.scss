@@ -365,7 +365,9 @@ body {
 	line-height: 21px;
 }
 
-.bookmark-added {}
+.bookmark-added {
+	vertical-align: middle;
+}
 
 .full-content {
 	display: flex;
