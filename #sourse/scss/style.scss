@@ -90,12 +90,21 @@ h6 {
 
 /*--------------------*/
 
+/*-- Переменные цвета шрифт --*/
+$background-color:#0A090A;
+$textcolor:#fff;
+$fonts:'Roboto',
+sans-serif;
+$searchcolor:#AEAEAE;
+$backgroundsearchcolor:rgba(196, 196, 196, 0.5);
+/*-- Переменные цвета шрифт конец --*/
+
 /*--Основные стили--*/
 
 body {
-	background-color: #0A090A;
-	color: #fff;
-	font-family: 'Roboto', sans-serif;
+	background-color: $background-color;
+	color: $textcolor;
+	font-family: $fonts;
 	background-image: url('../img/main-bg.png');
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -128,26 +137,26 @@ body {
 
 .search-input {
 	flex: 1;
-	background: rgba(196, 196, 196, 0.5);
+	background: $backgroundsearchcolor;
 	border-radius: 5px;
 	padding: 12px 18px 12px 18px;
-	color: #AEAEAE;
+	color: $searchcolor;
 	font-size: 14px;
 	line-height: 16px;
 }
 
 ::-webkit-input-placeholder {
 	/* Edge */
-	color: #AEAEAE;
+	color: $searchcolor;
 }
 
 :-ms-input-placeholder {
 	/* Internet Explorer 10-11 */
-	color: #AEAEAE;
+	color: $searchcolor;
 }
 
 ::placeholder {
-	color: #AEAEAE;
+	color: $searchcolor;
 }
 
 .search-button {
