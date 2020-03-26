@@ -110,6 +110,7 @@ $content-button-color:#FF8F27;
 $content-button-text-color:#fff;
 $menu-item-color:#000000;
 $tabs-item-hover:#FF8F27;
+$subcribe-input-color:rgba(241, 241, 241, 0.5);
 /*-- Переменные цвета шрифт конец --*/
 
 /*--Основные стили--*/
@@ -333,26 +334,29 @@ body {
 .actors-list {
 	padding-left: 15px;
 	text-decoration: underline;
+	line-height: 150%;
 }
 
-.actors-list-item {
-	padding-bottom: 5px;
-
-}
+.actors-list-item {}
 
 .full-info {
 	flex: 0.97;
 }
 
 .tabs {
+	display: flex;
+	align-items: center;
 	margin-bottom: 40px;
 }
 
 .tabs-item {
 	color: $menu-item-color;
-	margin-right: 40px;
 	font-size: 17px;
 	line-height: 21px;
+}
+
+.tabs-item:not(:last-child) {
+	margin-right: 40px;
 }
 
 .tabs-item:hover {
@@ -399,3 +403,31 @@ body {
 }
 
 .subscribe {}
+
+.subcribe-form {
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.subscribe-title {
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 150%;
+	padding-bottom: 14px;
+}
+
+.subcribe-input {
+	background-color: $subcribe-input-color;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	padding: 10px;
+	color: $searchcolor;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.subcribe-button {
+	background: $content-button-color;
+	border-radius: 0px 5px 5px 0px;
+	padding: 12px;
+}
