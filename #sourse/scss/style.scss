@@ -410,7 +410,7 @@ body {
 .subscribe {}
 
 .subcribe-form {
-	display: flex;
+	position: relative;
 	margin-bottom: 48px;
 }
 
@@ -422,19 +422,26 @@ body {
 }
 
 .subcribe-input {
+	width: calc(100%-5px);
 	background-color: $subcribe-input-color;
 	border-top-left-radius: 3px;
 	border-bottom-left-radius: 3px;
-	padding: 10px;
+	padding: 12px 18px 12px 18px;
+	height: 40px;
 	color: $searchcolor;
 	font-size: 14px;
 	line-height: 16px;
 }
 
 .subcribe-button {
+	position: absolute;
 	background: $content-button-color;
 	border-radius: 0px 5px 5px 0px;
-	padding: 12px;
+	height: 40px;
+	width: 40px;
+	padding: 9px;
+	top: 0;
+	right: 0;
 }
 
 @media(max-width:1200px) {
