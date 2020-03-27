@@ -375,6 +375,13 @@ body {
 	line-height: 21px;
 }
 
+.disable {
+	color: $menu-item-color;
+	margin-right: 40px;
+	font-size: 17px;
+	line-height: 21px;
+}
+
 .bookmark-added {
 	vertical-align: middle;
 }
@@ -385,7 +392,12 @@ body {
 }
 
 .tabs-content {
+	display: none;
 	margin-right: 70px;
+}
+
+.visible {
+	display: block;
 }
 
 .text {
